@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Catálogo de Arte</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <div class="contenedor">
+    <h1>CATÁLOGO DE ARTE</h1>
+
+    <form action="#" method="post">
+      <table>
+        <tr>
+          <td>
+            <strong>Introduce los términos de búsqueda:</strong><br><br>
+            <label>OBRA</label>
+            <label for="titulo">Título</label>
+            <input type="text" id="titulo" name="titulo">
+            <label for="autor">Autor</label>
+            <input type="text" id="autor" name="autor">
+          </td>
+          
+          <td>
+            <label for="tipo">TIPO</label><br>
+            <input type="checkbox" name="tipo" value="Escultura"> Escultura<br>
+            <input type="checkbox" name="tipo" value="Arquitectura"> Arquitectura<br>
+            <input type="checkbox" name="tipo" value="Pintura"> Pintura
+          </td>
+
+          <td>
+            <label>DISPONIBILIDAD</label><br>
+            <input type="radio" name="disponibilidad" value="publico"> Museo / Acceso público<br>
+            <input type="radio" name="disponibilidad" value="privado"> Colección privada
+          </td>
+
+          <td>
+            <label for="estilo">ESTILO</label><br>
+            <select id="estilo" name="estilo">
+              <option>Clásico</option>
+              <option>Moderno</option>
+              <option>Abstracto</option>
+              <option>Realismo</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+
+      <br><strong>Háganos saber sus sugerencias:</strong><br>
+      <textarea rows="5" cols="50" placeholder="Me gustaría indicar que..."></textarea><br><br>
+
+      <input type="submit" value="Buscar">
+    </form>
+  </div>
+  <footer>
+    &copy; 2025 <span class="texto-animado">Zarate</span>
+  </footer>
+  
+
+</body>
+</html>
